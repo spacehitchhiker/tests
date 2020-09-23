@@ -1,0 +1,56 @@
+@import '/main/var.styl'
+
+.element
+  padding 70px 0
+  &._bg-hightlight
+    background _bg-hightlight
+  & h1
+    margin 0 0 44px
+  & h2
+    margin 0 0 25px
+  & p
+    margin 0
+  & .color-dark
+    color _main-theme
+  & .limited-width
+    max-width 714px
+  & .links-btn
+    display flex
+    margin 60px 0 0
+    &__item
+      @extend .btn
+      margin-right 20px
+      &:last-child
+        margin-right 0
+  & .links-btnBord
+    display flex
+    margin 60px 0 0
+    &__item
+      @extend .btnBord
+      margin-right 20px
+      &:last-child
+        margin-right 0
+  & ul
+    margin 60px 0 0
+    > li
+      margin-bottom 40px
+      & a
+        font-size 20px
+        font-weight 500
+      & .caption
+        margin-top 20px
+
+
+  & ol
+    margin 60px 0 0
+    color _main-theme
+    > li
+      margin-bottom 40px
+
+
+
+
+
+
+
+

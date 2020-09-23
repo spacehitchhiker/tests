@@ -1,0 +1,66 @@
+@import '/main/var.styl'
+
+
+footer
+  background _main-theme
+  color #fff
+  padding 55px 70px
+  box-sizing border-box
+  display grid
+  grid-template-columns 1fr 2fr 1fr
+  grid-template-rows 1fr
+  @media screen and (max-width 1070px)
+    padding 40px 30px
+  @media screen and (max-width 750px)
+    grid-template-columns 1fr 2fr
+  @media screen and (max-width 590px)
+    grid-template-columns 1fr
+  & .footer-item
+    display flex
+    flex-direction  column
+    padding-left 10px
+    &:first-child
+      padding-left 0
+    @media screen and (max-width 750px)
+      &:last-child
+        display none
+    @media screen and (max-width 590px)
+      &:nth-child(2)
+        display none
+
+
+  & .logo-box
+    display flex
+    justify-content center
+    align-items center
+    width 130px
+    margin-bottom 15px
+    @media screen and (max-width 450px)
+        display none
+
+  & .caption
+    color rgba(178, 179, 188, 0.8)
+    font-size 14px
+    line-height 1.3em
+    @media screen and (max-width 450px)
+      color #fff
+      font-size 18px
+      line-height 1.6em
+  & .single-phone
+    font-size 18px
+    margin-bottom 10px
+    display flex
+    align-items center
+    > svg
+      margin-right 10px
+      fill _hover
+  & .phone-local
+    margin-top 7px
+  & .email
+    margin-bottom  10px
+    display flex
+    flex-direction  column
+    line-height 1.6em
+    font-size 14px
+  & .social-networks
+    margin-top 10px

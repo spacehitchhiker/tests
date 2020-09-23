@@ -1,16 +1,26 @@
 <header>
-	<section class="header-item _bg">
+	<section class="header-item _bg _none-mobile">
 		<a class="sign-in" href="#">Вход</a>
 		<a class="login" href="#">Регистрация</a>
 	</section>
 	<section class="header-item">
+		<button type="button" class="header-btn js-btnHeader">
+			<svg width="34" height="24" class="burger-open">
+				<use xlink:href="/img/sprite.svg#burger-open"></use>
+			</svg>
+			<svg width="34" height="24" class="burger-close">
+				<use xlink:href="/img/sprite.svg#burger-close"></use>
+			</svg>
+		</button>
 		<nav class="nav">
-			<!--		<div class="nav__list">-->
-			<a class="nav__link" href="#">Возможности</a>
-			<a class="nav__link" href="#">Тарифы</a>
-			<a class="nav__link" href="#">Партнерам</a>
-			<a class="nav__link" href="#">Помощь</a>
-			<!--		</div>-->
+			<div class="nav__list">
+				<a class="nav__link" href="#">Возможности</a>
+				<a class="nav__link" href="#">Тарифы</a>
+				<a class="nav__link" href="#">Партнерам</a>
+				<a class="nav__link" href="#">Помощь</a>
+				<a class="nav__link _show-mobile" href="#">Вход</a>
+				<a class="nav__link _show-mobile" href="#">Регистрация</a>
+			</div>
 		</nav>
 		<a href="index.html" class="logo-box">
 <!--			<svg width="114" height="27">-->

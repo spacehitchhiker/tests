@@ -12,7 +12,7 @@ body
 	background-size cover
 	overflow-x: hidden
 	position: relative
-	color: #000
+	color: _text
 	display: flex
 	flex-direction: column
 	@media(min-resolution: 70dpi) 
@@ -28,13 +28,13 @@ body
 
 a
 	outline: none
-	text-decoration: none
-	color _blue
+	color _green
 	align-self auto
 	transition .3s
-	//-webkit-tap-highlight-color: rgba(0,0,0,0)
 	-webkit-tap-highlight-color: transparent
-
+	text-decoration underline
+	&:hover
+		text-decoration none
 
 button:active,button:focus 
 	outline: none
@@ -81,11 +81,11 @@ h1
 	padding: 0
 	line-height: normal
 	margin-bottom 24px
-	font-family "Exo 2.0"
-	text-align center
+	text-align left
 	text-shadow 0.5px 0.866px 1px rgb( 0, 0, 0 )
+	text-transform uppercase
+	color _main-theme
 	@media screen and (min-width 960px)
-		//font-size 2.250em
 		font-size 36px
 
 h2
@@ -96,6 +96,8 @@ h2
 	line-height: normal
 	margin-top 48px
 	margin-bottom 24px
+	text-transform uppercase
+	color _main-theme
 	@media screen and (min-width 960px)
 		font-size: 1.750em
 
@@ -104,6 +106,8 @@ h3
 	padding 0
 	margin: 0
 	line-height: normal
+	text-transform uppercase
+	color _main-theme
 
 pre
 	color: #fff
@@ -128,23 +132,13 @@ pre
 	box-sizing border-box
 
 .wrap
-	max-width 1120px
+	max-width 1024px
 	margin 0 auto
 	padding 0 10px
 	@media screen and (min-width 1160px)
 		padding 0
 
-.content
-	@media screen and (min-width 1300px)
-		display flex
-		justify-content space-between
 
-.main-content
-	width 100%
-	@media screen and (min-width 960px)
-		margin-right 12px
-		min-width calc(100% - 312px - 12px)
-		max-width calc(100% - 312px - 12px)
 
 
 
