@@ -1,0 +1,153 @@
+body
+	margin: 0
+	padding: 0
+	border: 0
+	font-family "Trebuchet MS"
+	outline: none
+	font-size: 16px
+	line-height normal
+	min-width: 320px
+	min-height: 100vh
+	background: #514076
+	background-size cover
+	overflow-x: hidden
+	position: relative
+	color: #000
+	display: flex
+	flex-direction: column
+	@media(min-resolution: 70dpi) 
+		font-size: 16px
+	@media(min-resolution: 90dpi) 
+		font-size: 16px
+	@media(min-resolution: 140dpi)
+		font-size: 16px
+	@media(min-resolution: 180dpi) 
+		font-size: 16px
+	@media screen and (min-width 1020px) 
+		font-size: 16px
+
+a
+	outline: none
+	text-decoration: none
+	color _blue
+	align-self auto
+	transition .3s
+	//-webkit-tap-highlight-color: rgba(0,0,0,0)
+	-webkit-tap-highlight-color: transparent
+
+
+button:active,button:focus 
+	outline: none
+
+button
+	transition: .3s
+	&:hover 
+		cursor pointer
+	
+input::placeholder
+	opacity 0.7
+	color: #606060
+
+textarea::placeholder
+	opacity 0.7
+	color: #606060
+
+input,textarea 
+	border: #666 1px solid
+	outline: none
+	padding 5px
+	border-radius 4px
+	&:focus:required:invalid 
+		border-color: red
+	&:required:valid 
+		border-color: green
+	
+img 
+	display: block
+	max-width: auto
+	width: 100%
+	height: auto
+
+p
+	margin 0
+	padding 0
+	line-height 24px
+	margin-top 24px
+	margin-bottom 24px
+
+h1
+	font-size: 1.750em
+	margin: 0
+	padding: 0
+	line-height: normal
+	margin-bottom 24px
+	font-family "Exo 2.0"
+	text-align center
+	text-shadow 0.5px 0.866px 1px rgb( 0, 0, 0 )
+	@media screen and (min-width 960px)
+		//font-size 2.250em
+		font-size 36px
+
+h2
+	font-size: 1.500em
+	font-weight bold
+	padding 0
+	margin: 0
+	line-height: normal
+	margin-top 48px
+	margin-bottom 24px
+	@media screen and (min-width 960px)
+		font-size: 1.750em
+
+h3
+	font-size: 1.250em
+	padding 0
+	margin: 0
+	line-height: normal
+
+pre
+	color: #fff
+	font-weight bold
+	position relative
+	padding 10px
+	background-color: #000
+	&:before
+		position absolute
+		content: 'Пример кода'
+		bottom: -25px
+		left 50%
+		margin-left -70px
+		font-size: 22px
+		font-weight bold
+		color: _red
+
+//------- основные классы ------------------
+
+.main
+	flex-grow 1
+	box-sizing border-box
+
+.wrap
+	max-width 1120px
+	margin 0 auto
+	padding 0 10px
+	@media screen and (min-width 1160px)
+		padding 0
+
+.content
+	@media screen and (min-width 1300px)
+		display flex
+		justify-content space-between
+
+.main-content
+	width 100%
+	@media screen and (min-width 960px)
+		margin-right 12px
+		min-width calc(100% - 312px - 12px)
+		max-width calc(100% - 312px - 12px)
+
+
+
+
+
+
