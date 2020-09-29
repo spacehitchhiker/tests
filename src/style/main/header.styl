@@ -3,36 +3,80 @@
 header
   display flex
   justify-content space-between
-  align-items center
   text-transform uppercase
   font-weight 500
   font-size 1em
   box-shadow 1px 3px 18px rgba(0,0,0,0.2)
-  padding 0px 70px 0px 0px
+  padding 0 70px 0 0
   position relative
-  @media screen and (max-width 990px)
+  box-sizing border-box
+  background #fff
+  @media screen and (max-width 1154px)
     padding 0 20px 0 0
-  @media screen and (max-width 880px)
+  //@media screen and (max-width 990px)
+  //  padding 0 20px 0 0
+  @media screen and (max-width 995px)
     padding 0 20px 0 20px
     justify-content center
+    position fixed
+    top 0
+    width 100%
+    z-index 999
+  & a
+    text-decoration none
+
   & .header-item
     padding 35px 70px
     display flex
     align-items center
+    &._bg
+      background _gradient
+      flex-grow 1
+      //box-shadow 0 0 7px 5px rgba(0,0,0,.1)
+      border-radius 0 0 150px 0
+      max-width 30%
+      //margin-right 20px
+      position relative
+      @media screen and (max-width 1154px)
+        padding 35px 70px 35px 20px
+      &:after
+        content ''
+        position absolute
+        height 98px
+        display flex
+        transform skewX(-63deg)
+        right 97px
+        width 23px
+        background transparent
+        box-shadow 15px 0 3px -2px #39350e30
+      &:before
+        content ''
+        position absolute
+        right -23px
+        width 119px
+        height 98px
+        display flex
+        background #fff
+        transform skewX(-63deg)
     &:last-child
-      padding 35px 0px
+      padding 35px 0 35px 40px
       @media screen and (max-width 990px)
-        padding 20px 0px 20px 0px
+        padding 20px 0 20px 0
     @media screen and (max-width 990px)
       padding 20px 40px 20px 20px
+
     &._none-mobile
-      @media screen and (max-width 880px)
+      @media screen and (max-width 995px)
         display none
   & .sign-in
     margin-right 30px
     color _main-theme
+    &:hover
+      text-decoration underline
   & .login
     color _main-theme
+    &:hover
+      text-decoration underline
   & .header-btn
     display flex
     align-items center
@@ -41,38 +85,44 @@ header
     border 0
     padding 0
     margin 0
-    @media screen and (min-width 881px)
+    @media screen and (min-width 996px)
       display none
     & .burger-open
       display block
       fill _hover
-      @media screen and (max-width 880px)
+      @media screen and (max-width 995px)
           width 44px
           height 38px
     & .burger-close
       display none
       fill _hover
-      @media screen and (max-width 880px)
+      @media screen and (max-width 995px)
         width 44px
         height 38px
   & .nav
-    @media screen and (max-width 880px)
+    @media screen and (max-width 995px)
       display none
     &__link
       color _main-theme
       margin-right 20px
+      &:hover
+        text-decoration underline
+      &:nth-child(4)
+        margin-right 0
       &:last-child
         margin-right 0
       &._show-mobile
         display none
         text-decoration underline
-        @media screen and (max-width 880px)
+        @media screen and (max-width 995px)
           display block
 
   & .logo-box
     margin-left 30px
     width 114px
-    @media screen and (max-width 880px)
+    @media screen and (max-width 1024px)
+      margin-left 30px
+    @media screen and (max-width 995px)
       width 170px
     @media screen and (max-width 425px)
       width 150px
@@ -85,11 +135,10 @@ header
         display block
 
     & .nav
-      @media screen and (max-width 880px)
+      @media screen and (max-width 995px)
         display flex
-        top 70px
+        top 77px
         background #c9cad3
-        //bottom 0
         flex-direction column
         align-items center
         position fixed
@@ -98,12 +147,12 @@ header
         z-index 99999
         transition .6s
         box-shadow 1px 3px 18px rgba(39, 42, 81, 0.2)
-        height calc(100vh - 70px)
+        height calc(100vh - 77px)
         bottom 0
         padding 7px 5px 5px
         box-sizing border-box
       &__list
-        @media screen and (max-width 880px)
+        @media screen and (max-width 995px)
           display flex
           flex-direction column
           align-items center
@@ -118,6 +167,7 @@ header
           @media screen and (max-width 500px)
             padding 20px 0 10px
       &__link
-        @media screen and (max-width 880px)
+        @media screen and (max-width 995px)
           margin-right 0
           margin-bottom 20px
+
