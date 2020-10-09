@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    //= template/head.html
+    <title>Главная</title>
+</head>
+
+<body>
+
+    <main class="main _bgLuckyAds">
+        //= template/header.html
+        <div class="wrap">
+            <section class="container">
+                <section class="content">
+                    <h1 class="content__title">100% защита дома от вирусов  и микробов</h1>
+                    <ul class="advantages">
+                        <li class="advantages__item">
+                            <svg width="50" height="50" class="icon">
+                                <use xlink:href="/img/sprite.svg#check-mark_in_circle"></use>
+                            </svg>
+                            Убивает все известные вирусы и микробы
+                        </li>
+                        <li class="advantages__item">
+                            <svg width="50" height="50" class="icon">
+                                <use xlink:href="/img/sprite.svg#check-mark_in_circle"></use>
+                            </svg>
+                            Защищает поверхности от микробов 48 часов
+                        </li>
+                        <li class="advantages__item">
+                            <svg width="50" height="50" class="icon">
+                                <use xlink:href="/img/sprite.svg#check-mark_in_circle"></use>
+                            </svg>
+                            Подходит для любых поверхностей
+                        </li>
+                    </ul>
+                    <figure class="content__imgbox">
+                        <picture><img src="/img/med_box.png" alt="med-box"></picture>
+                    </figure>
+                </section>
+                <form action="" class="form">
+                    <div class="form__wrap-title">
+                        <div class="form__title">Специальное предложение!</div>
+                        <div class="form__caption">Специальная цена <span>149j*</span></div>
+                    </div>
+                    <div class="form__fields">
+                        <div class="form__select-box">
+                            <select name="country">
+                                <option value="0">Russia</option>
+                                <option value="1">Morocco</option>
+                                <option value="2">Canada</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form__input" placeholder="Name"/>
+                        <input type="text" class="form__input" placeholder="Phone number"/>
+                        <button class="form__btn">Заказать</button>
+                        <div class="form__caption">* при заказе набора</div>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    //= template/script.html
+</body>
+
+</html>

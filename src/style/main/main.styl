@@ -2,17 +2,17 @@ body
 	margin: 0
 	padding: 0
 	border: 0
-	font-family "Trebuchet MS"
+	font-family 'Inter', sans-serif
 	outline: none
 	font-size: 16px
 	line-height normal
 	min-width: 320px
 	min-height: 100vh
-	background: #514076
+	background: radial-gradient(152.33% 152.33% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F3D4C3
 	background-size cover
 	overflow-x: hidden
 	position: relative
-	color: #000
+	color: _text
 	display: flex
 	flex-direction: column
 	@media(min-resolution: 70dpi) 
@@ -64,9 +64,9 @@ input,textarea
 	
 img 
 	display: block
-	max-width: auto
-	width: 100%
-	height: auto
+	max-width 100%
+	width auto
+	height auto
 
 p
 	margin 0
@@ -81,7 +81,6 @@ h1
 	padding: 0
 	line-height: normal
 	margin-bottom 24px
-	font-family "Exo 2.0"
 	text-align center
 	text-shadow 0.5px 0.866px 1px rgb( 0, 0, 0 )
 	@media screen and (min-width 960px)
@@ -126,25 +125,35 @@ pre
 .main
 	flex-grow 1
 	box-sizing border-box
+	&._bg
+		background #514076
+	&._bgLuckyAds
+		background url("/img/bg-med.png") no-repeat
+		background-size cover
+		background-position center
+		@media screen and (max-width 1024px)
+			background-position 62%
 
 .wrap
-	max-width 1120px
+	max-width 1136px
 	margin 0 auto
-	padding 0 10px
+	padding 0 20px
 	@media screen and (min-width 1160px)
 		padding 0
+	@media screen and (max-width 500px)
+		padding 0 10px
 
-.content
-	@media screen and (min-width 1300px)
-		display flex
-		justify-content space-between
+//.content
+//	@media screen and (min-width 1300px)
+//		display flex
+//		justify-content space-between
 
-.main-content
-	width 100%
-	@media screen and (min-width 960px)
-		margin-right 12px
-		min-width calc(100% - 312px - 12px)
-		max-width calc(100% - 312px - 12px)
+//.main-content
+//	width 100%
+//	@media screen and (min-width 960px)
+//		margin-right 12px
+//		min-width calc(100% - 312px - 12px)
+//		max-width calc(100% - 312px - 12px)
 
 
 

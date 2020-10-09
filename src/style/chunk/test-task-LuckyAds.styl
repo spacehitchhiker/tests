@@ -1,0 +1,153 @@
+@import '/main/var.styl'
+
+.container
+  display flex
+  margin 23px 0 44px 0
+  align-items flex-start
+  @media screen and (max-width 980px)
+    flex-direction column
+  & .content
+    display flex
+    flex-direction column
+    position relative
+    @media screen and (max-width 980px)
+      align-items center
+    &__title
+      text-align left
+      font-weight 900
+      font-size 54px
+      line-height 68px
+      /* or 121% */
+      text-transform uppercase
+      color _main-theme
+      text-shadow 2px 2px 0 #FFFFFF
+      margin-bottom 62px
+      @media screen and (max-width 980px)
+        text-align center
+      @media screen and (max-width 500px)
+        font-size 32px
+        line-height 40px
+    &__imgbox
+      width 176px
+      position absolute
+      right 0
+      margin 0
+      bottom 60px
+      @media screen and (max-width 980px)
+        position relative
+        margin 40px 0 70px
+    & .advantages
+      padding 0
+      max-width 360px
+      &__item
+        list-style-type none
+        font-weight bold
+        font-size 20px
+        line-height 28px
+        position relative
+        margin-bottom 49px
+        padding-left 75px
+        & .icon
+          position absolute
+          left 0
+          top 0
+.form
+  background #fff
+  box-shadow 0px 4px 4px rgba(0, 0, 0, 0.25)
+  border-radius 2px
+  padding 24px 32px
+  box-sizing border-box
+  margin-left 112px
+  display flex
+  flex-direction column
+  justify-content space-between
+  min-width 368px
+  @media screen and (max-width 1100px)
+      margin-left 40px
+  @media screen and (max-width 980px)
+      margin-left  0
+      align-self center
+  @media screen and (max-width 980px)
+      min-width 300px
+  &__wrap-title
+    display flex
+    flex-direction column
+    & .form__caption
+      font-weight bold
+      font-size 22px
+      line-height 110%
+      /* or 24px */
+      text-align center
+      letter-spacing -0.01em
+      color _red
+      display flex
+      flex-direction column
+      justify-content center
+      & span
+        font-weight 800
+        font-size 38px
+        line-height 42px
+  &__title
+    font-weight bold
+    font-size 28px
+    line-height 32px
+    /* or 114% */
+    display flex
+    align-items center
+    text-align center
+    letter-spacing -0.01em
+  &__fields
+    display flex
+    flex-direction column
+    margin-top 88px
+  &__select-box
+    margin-bottom 12px
+    flex-grow 1
+  &__input
+    border 1px solid _main-theme
+    box-sizing border-box
+    border-radius 2px
+    padding 15px 19px
+    font-size 14px
+    line-height 116.75%
+    margin-bottom 12px
+    flex-grow 1
+    &:last-child
+      margin-bottom 0
+  &__btn
+    margin-top 21px
+    background _red
+    box-shadow inset 0px -4px 0px rgba(0, 0, 0, 0.25)
+    border-radius 50px
+    font-weight bold
+    font-size 18px
+    line-height 100%
+    /* identical to box height, or 18px */
+    text-align center
+    text-transform uppercase
+    display flex
+    align-items center
+    justify-content center
+    color #fff
+    width 100%
+    padding 16px 10px
+    box-sizing border-box
+    border none
+    &:hover
+      box-shadow inset 0 0 4px 3px rgba(0,0,0,.25)
+  &__caption
+    content attr(data-caption)
+    font-size 12px
+    line-height 20px
+    /* identical to box height, or 167% */
+    display flex
+    align-items center
+    justify-content center
+    text-align center
+    color _ltext
+    margin-top 16px
+
+
+
+
+
