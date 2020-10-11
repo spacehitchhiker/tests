@@ -6,6 +6,8 @@
   align-items flex-start
   @media screen and (max-width 980px)
     flex-direction column
+  @media screen and (max-width 500px)
+    margin 16px 0 44px 0
   & .content
     display flex
     flex-direction column
@@ -24,9 +26,13 @@
       margin-bottom 62px
       @media screen and (max-width 980px)
         text-align center
+      @media screen and (max-width 768px)
+        font-size 40px
+        margin-bottom 50px
       @media screen and (max-width 500px)
         font-size 32px
         line-height 40px
+        margin-bottom 32px
     &__imgbox
       width 176px
       position absolute
@@ -36,9 +42,11 @@
       @media screen and (max-width 980px)
         position relative
         margin 40px 0 70px
+        bottom unset
     & .advantages
       padding 0
       max-width 360px
+      margin 0
       &__item
         list-style-type none
         font-weight bold
@@ -47,6 +55,10 @@
         position relative
         margin-bottom 49px
         padding-left 75px
+        @media screen and (max-width 500px)
+          font-size 18px
+          line-height 24px
+          margin-bottom 20px
         & .icon
           position absolute
           left 0
@@ -72,21 +84,24 @@
   &__wrap-title
     display flex
     flex-direction column
-    & .form__caption
-      font-weight bold
-      font-size 22px
-      line-height 110%
-      /* or 24px */
-      text-align center
-      letter-spacing -0.01em
-      color _red
-      display flex
-      flex-direction column
-      justify-content center
-      & span
-        font-weight 800
-        font-size 38px
-        line-height 42px
+  &__caption
+    font-weight bold
+    font-size 22px
+    line-height 110%
+    /* or 24px */
+    text-align center
+    letter-spacing -0.01em
+    color _red
+    display flex
+    flex-direction column
+    justify-content center
+    margin-top 12px
+    @media screen and (max-width 980px)
+      margin-top 44px
+    & span
+      font-weight 800
+      font-size 38px
+      line-height 42px
   &__title
     font-weight bold
     font-size 28px
@@ -100,6 +115,8 @@
     display flex
     flex-direction column
     margin-top 88px
+    @media screen and (max-width 980px)
+      margin-top 53px
   &__select-box
     margin-bottom 12px
     flex-grow 1
@@ -114,6 +131,8 @@
     flex-grow 1
     &:last-child
       margin-bottom 0
+    &::placeholder
+      color _text
   &__btn
     margin-top 21px
     background _red
@@ -135,8 +154,7 @@
     border none
     &:hover
       box-shadow inset 0 0 4px 3px rgba(0,0,0,.25)
-  &__caption
-    content attr(data-caption)
+  &__btn-caption
     font-size 12px
     line-height 20px
     /* identical to box height, or 167% */
@@ -146,6 +164,7 @@
     text-align center
     color _ltext
     margin-top 16px
+
 
 
 

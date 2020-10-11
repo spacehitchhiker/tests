@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- <link rel="stylesheet" href="/css/normalize.css"> -->
-    <link href="/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Главная</title>
 </head>
@@ -53,20 +53,20 @@
                 <form action="" class="form">
                     <div class="form__wrap-title">
                         <div class="form__title">Специальное предложение!</div>
-                        <div class="form__caption">Специальная цена <span>149j*</span></div>
+                        <div class="form__caption">Специальная цена <span>149 &#x20bd *</span></div>
                     </div>
                     <div class="form__fields">
                         <div class="form__select-box">
-                            <select name="country">
+                            <select name="country" class="js-select">
                                 <option value="0">Russia</option>
                                 <option value="1">Morocco</option>
                                 <option value="2">Canada</option>
                             </select>
                         </div>
                         <input type="text" class="form__input" placeholder="Name"/>
-                        <input type="text" class="form__input" placeholder="Phone number"/>
+                        <input type="tel" class="form__input" placeholder="Phone number"/>
                         <button class="form__btn">Заказать</button>
-                        <div class="form__caption">* при заказе набора</div>
+                        <div class="form__btn-caption">* при заказе набора</div>
                     </div>
                 </form>
             </section>
@@ -75,7 +75,7 @@
     </main>
 
     <script src="../js/jquery-3.5.1.min.js"></script>
-    <script src="../js/select2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../js/main.js"></script>
 </body>
 

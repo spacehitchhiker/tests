@@ -1,0 +1,36 @@
+@import "../main/var.styl"
+
+.ui-selectmenu-button.ui-button
+	width 100%
+	border 1px solid _main-theme
+	box-sizing border-box
+	border-radius 2px
+	padding 15px 19px
+	font-size 14px
+	line-height 116.75%
+	flex-grow 1
+	background #fff
+.ui-button
+	color _text
+
+
+.ui-button .ui-icon
+	background url("/img/vector-close.png") no-repeat
+	background-position center
+	display flex
+	justify-content center
+	align-items center
+.ui-button:hover .ui-icon, .ui-button:focus .ui-icon
+	background url("/img/vector-close.png") no-repeat
+	background-position center
+//.ui-button:active .ui-icon, .ui-button:focus .ui-icon
+//	transform  scaleY(-1)
+.ui-button:focus
+	outline none
+.ui-widget.ui-widget-content
+	border 1px solid _main-theme
+.ui-state-active, .ui-widget-content .ui-state-active
+	border 1px solid #efe2cc
+	background _main-theme
+.ui-widget
+	font-family 'Inter', sans-serif
