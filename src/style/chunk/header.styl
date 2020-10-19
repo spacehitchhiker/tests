@@ -1,0 +1,49 @@
+@import '../main/var.styl'
+
+.header
+  width 100%
+  box-sizing border-box
+  padding 60px 0 100px
+  background _main-theme url("/img/header-img.png") no-repeat
+  background-size cover
+  color #fff
+  @media screen and (max-width 1230px)
+    background-position 30%
+  @media screen and (max-width 800px)
+    background-position 50%
+  @media screen and (max-width 600px)
+    background-position 60%
+
+  @media screen and (max-width 468px)
+    background _main-theme url("/img/bg-mobile.png") no-repeat
+    background-size cover
+    background-position 41%
+    padding 20px 0 50px
+  & h1
+    @media screen and (max-width 468px)
+      text-align center
+      margin 20px 0 27px
+  &__content
+    width 600px
+    @media screen and (max-width 800px)
+      width 440px
+    @media screen and (max-width 468px)
+      width 100%
+
+    &-text
+      font-size 20px
+      color _grayLight
+      @media screen and (max-width 468px)
+        text-align center
+    &-link
+      @extend .btn
+      font-size 20px
+      width 330px
+      margin 40px 0 0
+      @media screen and (max-width 468px)
+        margin 250px auto 0
+      @media screen and (max-width 468px)
+        width 100%
+
+.wrap-logo
+  width 190px

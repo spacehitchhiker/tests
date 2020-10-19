@@ -1,0 +1,59 @@
+@import "../main/var.styl"
+
+.footer
+  width 100%
+  box-sizing border-box
+  padding 140px 0 40px
+  background _main-theme url("/img/footer-img.png") no-repeat
+  background-size cover
+  color #fff
+  @media screen and (max-width 750px)
+    padding 60px 0 40px
+  &__content
+    display flex
+    justify-content space-evenly
+    @media screen and (max-width 750px)
+      flex-direction column
+      justify-content flex-start
+    &-text
+      margin 0
+      width 450px
+      box-sizing border-box
+      margin-right 50px
+      @media screen and (max-width 750px)
+        width 100%
+        margin-right 0
+        margin-bottom 30px
+    & .form
+      width 370px
+      box-sizing border-box
+      display flex
+      flex-direction column
+      @media screen and (max-width 750px)
+        width 100%
+      &__input
+        flex-grow 1
+        padding 25px
+        border none
+        border-radius 10px
+        font-size 16px
+      &__btn
+        @extend .btn
+        width 100%
+        margin 25px 0 20px
+        letter-spacing 2px
+      &__caption
+        font-size 12px
+        > a
+          color #fff
+          text-decoration underline
+          &:hover
+            text-decoration none
+
+  &__caption
+    margin-top 180px
+    text-align center
+    font-size 14px
+    font-weight 300
+    @media screen and (max-width 750px)
+      margin-top 50px

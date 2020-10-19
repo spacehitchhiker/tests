@@ -1,20 +1,20 @@
 body
 	margin: 0
 	padding: 0
-	border: 0
+	border 0
 	font-family "Trebuchet MS"
-	outline: none
-	font-size: 16px
+	outline none
+	font-size 16px
 	line-height normal
-	min-width: 320px
-	min-height: 100vh
-	background: #514076
+	min-width 320px
+	min-height 100vh
+	background #fff
 	background-size cover
-	overflow-x: hidden
-	position: relative
-	color: #000
-	display: flex
-	flex-direction: column
+	overflow-x hidden
+	position relative
+	color #000
+	display flex
+	flex-direction column
 	@media(min-resolution: 70dpi) 
 		font-size: 16px
 	@media(min-resolution: 90dpi) 
@@ -45,12 +45,10 @@ button
 		cursor pointer
 	
 input::placeholder
-	opacity 0.7
-	color: #606060
+	color _ltext
 
 textarea::placeholder
-	opacity 0.7
-	color: #606060
+	color _ltext
 
 input,textarea 
 	border: #666 1px solid
@@ -64,40 +62,39 @@ input,textarea
 	
 img 
 	display: block
-	max-width: auto
-	width: 100%
+	max-width: 100%
+	width: auto
 	height: auto
 
 p
-	margin 0
 	padding 0
 	line-height 24px
-	margin-top 24px
-	margin-bottom 24px
+	margin 24px 0
 
 h1
-	font-size: 1.750em
-	margin: 0
+	//font-size: 2.2em
+	font-size 35px
 	padding: 0
 	line-height: normal
-	margin-bottom 24px
-	font-family "Exo 2.0"
-	text-align center
-	text-shadow 0.5px 0.866px 1px rgb( 0, 0, 0 )
+	margin 86px 0 40px
+	text-align left
+	text-transform uppercase
 	@media screen and (min-width 960px)
-		//font-size 2.250em
-		font-size 36px
+		//font-size 3.8em
+		font-size 60px
 
 h2
-	font-size: 1.500em
+	//font-size: 2.2em
+	font-size 35px
 	font-weight bold
 	padding 0
-	margin: 0
 	line-height: normal
-	margin-top 48px
-	margin-bottom 24px
+	margin 70px 0 40px
+	text-transform uppercase
+	text-align center
 	@media screen and (min-width 960px)
-		font-size: 1.750em
+		//font-size: 3.7em
+		font-size 43px
 
 h3
 	font-size: 1.250em
@@ -128,23 +125,13 @@ pre
 	box-sizing border-box
 
 .wrap
-	max-width 1120px
+	max-width 1200px
 	margin 0 auto
-	padding 0 10px
-	@media screen and (min-width 1160px)
-		padding 0
+	padding 0 20px
+	//@media screen and (min-width 900px)
+	//	padding 0
 
-.content
-	@media screen and (min-width 1300px)
-		display flex
-		justify-content space-between
 
-.main-content
-	width 100%
-	@media screen and (min-width 960px)
-		margin-right 12px
-		min-width calc(100% - 312px - 12px)
-		max-width calc(100% - 312px - 12px)
 
 
 
