@@ -12,6 +12,7 @@ function slideDetect() {
             slidesToShow: 3,
             slidesToScroll: 1,
             dots: true,
+            dotsClass: 'custom-dots',
             responsive: [
                 {
                     breakpoint: 600,
@@ -51,15 +52,16 @@ function sliderWhyUs() {
             slidesToShow: 2,
             slidesToScroll: 1,
             dots: true,
+            dotsClass: 'custom-dots',
             responsive: [
                 {
                     breakpoint: 768,
                     settings: {
-                        arrows: false,
+
                         slidesToShow: 1,
-                        infinite: true,
+
                         slidesToScroll: 1,
-                        dots: true
+
                     }
                 },
             ]
@@ -80,6 +82,7 @@ function sliderFeedback() {
             slidesToShow: 2,
             slidesToScroll: 1,
             dots: true,
+            dotsClass: 'custom-dots',
             responsive: [
                 {
                     breakpoint: 768,
