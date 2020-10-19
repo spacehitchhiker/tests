@@ -3,12 +3,23 @@
 .why-us
   display flex
   justify-content space-around
+  @media screen and (max-width 1170px)
+    position relative
+  & .slick-dots
+    position absolute
+    bottom -90px
+    transform rotate(-90deg)
+    list-style-type none
+    & li
+      display flex
   &__item
-    display flex
+    display flex !important
     flex-direction column
     align-items center
     //justify-content space-between
     max-width 340px
+    @media screen and (max-width 1170px)
+      max-width none
     &-text
       text-align center
       margin 40px 0 0
@@ -20,5 +31,8 @@
   height 360px
   justify-content center
   align-items flex-end
+  @media screen and (max-width 450px)
+    width 277px
+    height 300px
 
 

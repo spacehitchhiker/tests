@@ -6,9 +6,21 @@
   justify-content space-between
   margin 40px 0 60px
   align-items flex-end
+  @media screen and (max-width 1080px)
+    position relative
+  & .slick-dots
+    position absolute
+    bottom -70px
+    transform rotate(-90deg)
+    list-style-type none
+    padding 0
+    & li
+      display flex
   &__item
-    display flex
+    display flex !important
     flex-direction column
+    @media screen and (max-width 1080px)
+      align-items center
   &__text
     padding 20px
     border-radius 10px
@@ -26,6 +38,8 @@
       position absolute
       left 40px
       bottom -27px
+      @media screen and (max-width 1080px)
+        left 127px
     &:after
       content ''
       width 0
@@ -35,6 +49,8 @@
       position absolute
       left 41px
       bottom -24px
+      @media screen and (max-width 1080px)
+        left 128px
 
 
   &__info
