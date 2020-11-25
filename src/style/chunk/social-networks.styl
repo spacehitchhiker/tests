@@ -6,7 +6,7 @@
 	background #fff 
 	border-radius 41px
 	box-sizing border-box 
-	padding 0px 71px 69px
+
 	&__text
 		margin 31px 0
 		color _ltext
@@ -17,15 +17,22 @@
 	&__btn 
 		@extend .btn 
 		background _gradient-blue
-		padding 10px 20px 10px 95px
+		padding 19px 20px 19px 95px
 		position relative 
 		display flex 
 		align-items center
 		margin-bottom 22px
 		&:last-child 
 			margin-bottom 0
-		& svg 
-			positon absolute
+		&:hover
+			box-shadow inset 0 0 19px 1px rgba(0, 0, 0, 0.2)
+		& .icon 
+			position absolute
+			&._fb
+				left 45px
+			&._tw
+				left 39px
 		&._bg-dark
 			background _gradient-dark-blue 
+		
 
