@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    //= template/head.html
+    <title>Главная</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="wrap _enter-page">
+            <section class="enter-page">
+                <div class="enter-page__content">
+                    <h1 class="enter-page__title">Welcome Page</h1>
+                    <p class="enter-page__text">Sign in to continue access pages</p>
+                </div>
+                <div class="enter-page__form-box">
+                    <div class="enter-page__wrap-form1">
+                        <div class="enter-page__wrap-form2">
+                            <form action="" id="form" class="form" novalidate>
+                                <div class="form__title">Sign In</div>
+                                <p class="form__text">Sign in to continue access pages</p>
+                                <div class="form-control">   
+                                    <input type="email" id="email" name="email" class="form-control__input" placeholder="Email Address">
+                                    <small>Error message</small>
+                                </div>
+                                
+                                <div class="form-control">    
+                                    <input type="password" id="password" class="form-control__input" placeholder="Password">
+                                    <small>Error message</small>
+                                </div>
+                                
+                                <button id="submit-form" class="form__btn">CONTINUE</button>
+                            </form>
+
+                            <div class="social-networks">
+                                <p class="social-networks__text">or Connect with Social Media</p>
+                                <button type="button" class="social-networks__btn">
+                                    <svg width="31" height="25"  class="icon _tw">
+                                        <use xlink:href="/img/sprite.svg#twitter"></use>
+                                    </svg>
+                                    Sign In With Twitter
+
+                                </button>
+                                <button type="button" class="social-networks__btn _bg-dark ">
+                                    <svg width="16" height="30" class="icon _fb">
+                                        <use xlink:href="/img/sprite.svg#fb"></use>
+                                    </svg>
+                                    Sign In With Facebook
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+            </section>
+        </div>
+    </main>
+
+    //= template/script.html
+</body>
+
+</html>

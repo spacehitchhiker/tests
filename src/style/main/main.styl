@@ -1,20 +1,20 @@
 body
-	margin: 0
-	padding: 0
-	border: 0
+	margin 0
+	padding 0
+	border 0
 	font-family "Trebuchet MS"
-	outline: none
-	font-size: 16px
+	outline none
+	font-size 16px
 	line-height normal
-	min-width: 320px
-	min-height: 100vh
-	background: #514076
+	min-width 320px
+	min-height 100vh
+	background _main-theme
 	background-size cover
-	overflow-x: hidden
-	position: relative
-	color: #000
-	display: flex
-	flex-direction: column
+	overflow-x hidden
+	position relative
+	color _text
+	display flex
+	flex-direction column
 	@media(min-resolution: 70dpi) 
 		font-size: 16px
 	@media(min-resolution: 90dpi) 
@@ -83,7 +83,6 @@ h1
 	margin-bottom 24px
 	font-family "Exo 2.0"
 	text-align center
-	text-shadow 0.5px 0.866px 1px rgb( 0, 0, 0 )
 	@media screen and (min-width 960px)
 		//font-size 2.250em
 		font-size 36px
@@ -126,25 +125,20 @@ pre
 .main
 	flex-grow 1
 	box-sizing border-box
+	display flex
+    justify-content center
+    align-items center
 
 .wrap
-	max-width 1120px
-	margin 0 auto
+	max-width 1253px
+	margin auto
 	padding 0 10px
-	@media screen and (min-width 1160px)
+	@media screen and (min-width 1274px)
 		padding 0
-
-.content
-	@media screen and (min-width 1300px)
-		display flex
-		justify-content space-between
-
-.main-content
-	width 100%
-	@media screen and (min-width 960px)
-		margin-right 12px
-		min-width calc(100% - 312px - 12px)
-		max-width calc(100% - 312px - 12px)
+	&._enter-page
+		display flex 
+		flex 1
+		
 
 
 

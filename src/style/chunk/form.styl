@@ -1,0 +1,98 @@
+@import '/main/var.styl'
+
+.form
+	background #fff 
+	border-radius 41px
+	box-sizing border-box 
+	
+	display flex 
+	// width 594px
+	flex-direction column
+	&__title
+		text-align center
+		margin-bottom 22px
+		font-weight bold
+		font-size 52px
+		line-height 63px
+		letter-spacing 0.472727px
+		@media screen and (max-width 767px)
+			font-size 42px
+			
+		@media screen and (max-width 500px)
+			font-size 32px
+			line-height 40px
+	&__text 
+		text-align center
+		margin 0px 0 50px 
+		color _ltext
+		font-size 20px
+		line-height 24px
+		letter-spacing 0.4px
+		@media screen and (max-width 500px)
+			font-size 18px
+	& .form-control
+		display flex 
+		flex 1
+		position relative
+		&__input 
+			display flex 
+			flex 1 
+			background _bg-gray
+			border-radius 28px
+			padding 19px 45px
+			border none 
+			font-size 14px
+			line-height 17px
+			letter-spacing 0.315151px
+			margin-bottom 22px
+			border 1px solid _bg-gray
+			&::placeholder
+				color _placeholder
+		& small
+			position absolute
+			top -17px
+			left 0
+			color _red
+			font-size 14px
+			background #fff
+			border-radius 3px
+			padding 3px
+			box-sizing border-box
+			visibility hidden
+			box-shadow 0 1px 5px #ff5e5ba3
+	& .success
+		& .form-control__input
+			border 1px solid _main-theme
+		& small
+			visibility hidden
+
+	& .error 
+		& .form-control__input
+			border 1px solid _red
+		& small
+			visibility visible
+			
+	
+
+
+			
+	&__btn
+		@extend .btn
+		justify-content center  
+		text-align center
+		text-transform uppercase 
+		position relative
+		letter-spacing 4.2px
+		font-weight 500
+		margin 10px 0 0px
+		background _gradient-green
+		&:after 
+			content url('/img/arrow.svg')
+			position absolute 
+			right 15px
+			top 15px
+		&:hover
+			box-shadow inset 0 0 19px 1px rgba(0, 0, 0, 0.2)
+		&:disabled
+			box-shadow inset 0 0 0px 0px rgba(0, 0, 0, 0)
+			opacity 0.7
