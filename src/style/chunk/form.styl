@@ -30,31 +30,51 @@
 		letter-spacing 0.4px
 		@media screen and (max-width 500px)
 			font-size 18px
-	&__input 
+	& .form-control
 		display flex 
-		flex 1 
-		background _bg-gray
-		border-radius 28px
-		padding 19px 45px
-		border none 
-		font-size 14px
-		line-height 17px
-		letter-spacing 0.315151px
-		margin-bottom 22px
-		border 1px solid _bg-gray
+		flex 1
 		position relative
-		&::placeholder
-			color _placeholder
-		&:before
-			content attr(data-message)
+		&__input 
+			display flex 
+			flex 1 
+			background _bg-gray
+			border-radius 28px
+			padding 19px 45px
+			border none 
+			font-size 14px
+			line-height 17px
+			letter-spacing 0.315151px
+			margin-bottom 22px
+			border 1px solid _bg-gray
+			&::placeholder
+				color _placeholder
+		& small
 			position absolute
-			top -17px 
+			top -17px
 			left 0
-			display flex
-			
-	& #mail
-		& .error
+			color _red
+			font-size 14px
+			background #fff
+			border-radius 3px
+			padding 3px
+			box-sizing border-box
+			visibility hidden
+			box-shadow 0 1px 5px #ff5e5ba3
+	& .success
+		& .form-control__input
+			border 1px solid _main-theme
+		& small
+			visibility hidden
+
+	& .error 
+		& .form-control__input
 			border 1px solid _red
+		& small
+			visibility visible
+			
+	
+
+
 			
 	&__btn
 		@extend .btn

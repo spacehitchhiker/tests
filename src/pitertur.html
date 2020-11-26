@@ -17,11 +17,19 @@
                 <div class="enter-page__form-box">
                     <div class="enter-page__wrap-form1">
                         <div class="enter-page__wrap-form2">
-                            <form action="" class="form">
+                            <form action="" id="form" class="form" novalidate>
                                 <div class="form__title">Sign In</div>
                                 <p class="form__text">Sign in to continue access pages</p>
-                                <input type="email" id="mail" name="mail" class="form__input" placeholder="Email Address">
-                                <input type="password" class="form__input" placeholder="Password">
+                                <div class="form-control">   
+                                    <input type="email" id="email" name="email" class="form-control__input" placeholder="Email Address">
+                                    <small>Error message</small>
+                                </div>
+                                
+                                <div class="form-control">    
+                                    <input type="password" id="password" class="form-control__input" placeholder="Password">
+                                    <small>Error message</small>
+                                </div>
+                                
                                 <button id="submit-form" class="form__btn">CONTINUE</button>
                             </form>
 
@@ -30,7 +38,7 @@
                                 <button type="button" class="social-networks__btn">
                                     <svg width="31" height="25"  class="icon _tw">
                                         <use xlink:href="/img/sprite.svg#twitter"></use>
-                                    </svg
+                                    </svg>
                                     Sign In With Twitter
 
                                 </button>
