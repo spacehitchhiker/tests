@@ -1,0 +1,55 @@
+@import "../main/var.styl"
+
+.why-us
+  display flex
+  justify-content space-around
+  @media screen and (max-width 1170px)
+    position relative
+  & .custom-dots
+    position absolute
+    bottom -80px
+    transform rotate(-90deg)
+    list-style-type none
+    padding 0
+    & li
+      display flex
+      & button
+        padding 0
+        background _text
+        width 8px
+        height 8px
+        border-radius 50%
+        margin 10px 5px
+        font-size 0
+        border none
+    & li[class=slick-active]
+      > button
+        background _yellow
+        width 8px
+        height 8px
+        border-radius 50%
+        border none
+  &__item
+    display flex !important
+    flex-direction column
+    align-items center
+    //justify-content space-between
+    max-width 340px
+    @media screen and (max-width 1170px)
+      max-width none
+    &-text
+      text-align center
+      margin 40px 0 0
+      padding 0 10px
+      box-sizing border-box
+.img-wrap
+  display flex
+  width 340px
+  height 360px
+  justify-content center
+  align-items flex-end
+  @media screen and (max-width 450px)
+    width 277px
+    height 300px
+
+

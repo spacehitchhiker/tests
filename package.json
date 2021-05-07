@@ -1,9 +1,7 @@
 {
   "name": "gulp4.0",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "del": "^4.1.0",
@@ -26,5 +24,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spacehitchhiker/tests.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spacehitchhiker/tests/issues"
+  },
+  "homepage": "https://github.com/spacehitchhiker/tests#readme",
+  "description": ""
 }

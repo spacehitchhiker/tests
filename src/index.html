@@ -7,16 +7,62 @@
 </head>
 
 <body>
-    <main class="main">
+<main class="main">
+
+    <section class="header">
         <div class="wrap">
-            <section class="container">
-                <h1 class="main-title">Hello you!!</h1>
-            </section>
-
+            <div class="wrap-logo"><img src="/img/logoWithText.png" alt="" class="logo"></div>
+            <div class="header__content">
+                <h1>Домашние простые рецепты</h1>
+                <p class="header__content-text">Собирайте рецепты в recipe box</p>
+                <a href="#footer-form" class="header__content-link">Присоединиться к сообществу</a>
+            </div>
         </div>
-    </main>
+    </section>
+    <div class="wrap">
 
-    //= template/script.html
+        //= template/advantages.html
+
+        <h2>Почему круто быть с нами:</h2>
+
+        //= template/why-us.html
+
+    </div>
+    <section class="banner">
+        <div class="wrap">
+            <p class="banner__text">
+                Удобно получать на емейл уникальные проверенные рецепты,
+                которые дружная команда Tastycookery попробовала сама и рекомендует
+            </p>
+            <a href="#footer-form" class="banner__link">
+                <span class="banner__link-default">Стать членом семьи Tastycookery</span> <span>бесплатно</span>
+            </a>
+        </div>
+    </section>
+
+    <div class="wrap">
+
+        <h2>Отзывы довольных пользователей</h2>
+        //= template/feedback.html
+    </div>
+
+    <section class="footer">
+        <div class="wrap">
+            <div class="footer__content">
+                <p class="footer__content-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias architecto aspernatur beatae consectetur consequatur corporis,
+                    cum distinctio dolorum enim eum expedita, id illo ipsum minima non quaerat qui, totam ut?
+                </p>
+                //= template/form.html
+            </div>
+            <div class="footer__caption">© 2014–2018 TastyCookery.com</div>
+        </div>
+    </section>
+
+
+</main>
+//= template/script.html
 </body>
 
 </html>

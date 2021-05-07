@@ -1,0 +1,107 @@
+@import "../main/var.styl"
+
+
+.feedback
+  display flex
+  justify-content space-between
+  margin 40px 0 60px
+  align-items flex-end
+  @media screen and (max-width 1080px)
+    position relative
+  & .slick-track
+    align-items flex-end
+    display flex
+  & .custom-dots
+    position absolute
+    bottom -65px
+    transform rotate(-90deg)
+    list-style-type none
+    padding 0
+    left 0
+    right 0
+    max-width 30px
+    margin 0 auto
+    & li
+      display flex
+      & button
+        padding 0
+        background _text
+        width 8px
+        height 8px
+        border-radius 50%
+        margin 10px 5px
+        font-size 0
+        border none
+    & li[class=slick-active]
+      > button
+        background _yellow
+        width 8px
+        height 8px
+        border-radius 50%
+        border none
+  &__item
+    display flex !important
+    flex-direction column
+    @media screen and (max-width 1080px)
+      align-items center
+  &__text
+    padding 20px
+    border-radius 10px
+    width 320px
+    box-sizing border-box
+    border 1px solid _ltext
+    margin-bottom 44px
+    position relative
+    @media screen and (max-width 500px)
+      width 270px
+    &:before
+      content ''
+      width 0
+      height 0
+      border 13px solid
+      border-color _ltext transparent transparent _ltext
+      position absolute
+      left 40px
+      bottom -27px
+      @media screen and (max-width 1080px)
+        left 127px
+    &:after
+      content ''
+      width 0
+      height 0
+      border 13px solid
+      border-color #fff transparent transparent #fff
+      position absolute
+      left 41px
+      bottom -24px
+      @media screen and (max-width 1080px)
+        left 128px
+
+
+  &__info
+    display flex
+    align-items center
+    & .name
+      text-transform uppercase
+      font-size 16px
+      font-weight 600
+    & .age
+      color _ltext
+      font-size 12px
+      margin-top 8px
+  &__namebox
+    margin-left 20px
+  &__imgbox
+    width 80px
+    height 80px
+    border-radius 50%
+    overflow hidden
+    position relative
+    display flex
+  &__img
+    width 100%
+    position absolute
+    margin 0 auto
+  //&__namebox
+  //  display flex
+  //  flex-direction column
